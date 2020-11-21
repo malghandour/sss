@@ -1,0 +1,96 @@
+The State of IBM Cloud Security: Think 2019
+While many enterprises are adopting cloud services to achieve enhancements in scalability and efficiency, the CISO organizations in those enterprises are still looking for an effective strategy and tools for protection of data on the cloud. According to the IBM Institute for Business Value, 57 percent of all multicloud managers surveyed worry about security and compliance.[1]
+
+The cloud development and operations model is also bringing about culture and organizational changes in enterprises, which means that application teams are taking on more security responsibility and accountability. Enabling developers to embed security into the DevOps process—thus positioning for an effective Dev-Sec-Ops—is important in achieving continuous security.
+
+Traditional security products do not seem to address the challenges of dynamic, virtual, and distributed cloud environments. IBM’s view is that enterprises today require an end-to-end approach to security that helps them achieve three core objectives in managing their risk and compliance through structured security practices:
+
+Manage user access and network protection across multicloud deployments
+Fortify data protection with increased customer control and encryption of data at rest and in use
+Gain actionable security insights using built-in capabilities and open integration
+
+
+Manage user access and network protection across multicloud deployments
+Surveys from the IBM Institute for Business Value show that larger organizations are adopting a multicloud strategy.[2] That means IBM’s clients need seamless management of security policies across their various clouds. In order to facilitate secured integration in a multicloud environment, we’ve built two key capabilities:
+
+IBM Cloud App ID: App ID is designed to enable organizations to deliver a single, seamless experience for managing identity and access management for cloud applications, regardless of the combination of public cloud, dedicated, or private cloud. This offering can empower developers to easily integrate identity into their apps. Recently delivered capabilities for App ID include multi-factor authentication, prescriptive approach to access control, and managing policies across multiple clouds.
+IBM Cloud Internet Services: This offering, which went live in 2018, is designed to provide a uniform platform to configure and manage the Domain Name System (DNS), Global Load Balancing (GLB), Web Application Firewall (WAF), and protection against Distributed Denial of Service (DDoS). With IBM Cloud Internet Services Enterprise Edition, organizations can get edge protection for multiple domains running in different cloud environments.
+Fortify data protection with increased customer control and encryption of data at rest and in use
+IBM Cloud security offerings and capabilities are designed to enable customers to gain more control of their data by using extended encryption and key-management capabilities.
+
+The IBM Cloud Hyper Protect Crypto Services: IBM Cloud Hyper Protect Crypto Service will be available in March and is designed to provide encryption key management with a dedicated cloud hardware security module (HSM) built on the only FIPS 140-2 level 4-based technology offered by a public cloud provider. Through this, enterprises can fully manage their encryption keys on the cloud and have exclusive control of the HSMs that protect those keys, thus enabling a “Keep Your Own Key” (KYOK) functionality to help achieve more authority over their data.
+IBM Cloud Data Shield: Built on Intel SGX and Fortanix® Runtime Encryption®, this offering is designed to enable application developers to enhance their applications (with no code change) to help protect sensitive data within protected areas of execution, known as enclaves. Data processed in an enclave is only visible to the application and not visible to the OS, Hypervisor, or any entities not authorized by the application. New (beta) capabilities in Data Shield include the following:
+Runtime protection for Python applications, with no code changes required
+A new Enclave Manager user interface that provides role-based management console, converter to get shielded images, and attestation reports
+An integrated experience with the IBM Cloud platform
+IBM Cloud Key Protect: IBM Cloud Key Protect, the key management service that is designed to enable Bring Your Own Key (BYOK), has delivered several capabilities, such as key rotation, secured upload of Customer Root Keys, and Private Network Access. IBM Cloud offers an expanded set of services supporting data-at-rest encryption with BYOK. With this new release, Key Protect now integrates with IBM Cloud for VMware Solutions, Databases, IBM Cloud Kubernetes Service, and Virtual Servers.
+IBM Cloud Hyper Protect DBaaS (beta): IBM Cloud Hyper Protect DBaaS, which is available in beta, is designed to protect against threats of data breach and data manipulation, leveraging the strengths of IBM LinuxONE pervasive encryption and IBM Secure Service Container technology. It enables clients to use a fully encrypted database without the need for specialized skills.
+Gain actionable security insights using built-in capabilities and open integration
+You can’t manage what you can’t see. We hear from our enterprise clients that having appropriate security visibility is important in order to build confidence to move workloads to the cloud.
+
+IBM Cloud Security Advisor provides a simple, unified dashboard with built-in monitoring capabilities and integration with third-party security providers. We continue to build and enhance our Security Advisor offering, and we’re excited to share the availability of its new functionalities:
+
+Network Insights (Beta) provides actionable insights about potential threats and suspicious behavior by monitoring network traffic to and from Kubernetes clusters. It uses integrated threat intelligence and anomaly detection to identify reconnaissance attacks or potentially compromised assets.
+Integration with container security providers Twistlock® and NeuVector.
+End-to-end security: An example use case
+To better understand how each piece of the security portfolio works together to address the security needs of your company, we can explain how a hypothetical company would take advantage of all of them. This company helps organizations raise funds to serve people in need or in times of disaster. They deal with sensitive data about donors, their credit cards, and also maintain donation records to help with necessary tax documents.
+
+All access to the company’s systems should be protected, so they’d use Cloud Internet Services to protect against network attacks and App ID to authenticate their users. Credit card and other sensitive information would be protected in memory using Data Shield and would be encrypted and stored in a database. The keys to that encryption would then be securely stored in Hyper Protect Crypto Services. To manage and monitor the security posture of the application, their team would leverage Security Advisor to view their access logs and address potential vulnerabilities.
+
+In conclusion
+Founded on the principle that the cloud offers a unique opportunity to “do security right,” IBM Cloud is continuing to address these enterprise needs by delivering new security product offerings and capabilities to help enable enterprises to adopt cloud with confidence. We will continue investing in improvements like the ones we’ve announced above so our enterprise customers can have peace of mind as they bring more and more of their sensitive workloads to the cloud.
+
+
+
+[1] [2] IBM Institute for Business Value: Assembling Your Cloud Orchestra (October 2018)
+
+	Nataraj Nagaratnam
+Distinguished Engineer, CTO & Director, Cloud Security
+
+App ID cloud internet services Data Shield Hyper Protect hyper protect crypto services hyper protect dbaas ibm cloud security advisor Key Protect security
+
+Previous Post
+
+IBM POWER9 on IBM Cloud: More Choice and Flexibility, On-Premise and Off
+Next Post
+
+A “Kubernetes Everywhere” Approach: Build and Deploy Enterprise-Scale Modern Applications for Hybrid Cloud
+ 
+Recent Posts
+Java Microservices on Open Source Application Servers
+What is DevOps?
+VIDEO – Kubernetes Explained
+Connecting to IBM Cloud Databases for MongoDB with Robo3T
+Introducing MFA for IBM Cloud Users with Federated ID
+Archives
+Archives  
+Tags
+analytics announcements api apps Architecture Center best-of-bluemix Bluemix bluemix-support-notifications buildpacks cloud cloudant cloud foundry conference containers dashdb database deployment devops docker garage garage-method hybrid IBM Cloud IBM Cloud Functions IBM Cloud Kubernetes Service IBM Cloud Private interconnect iot java Kubernetes liberty microservices mobile MobileFirst monitoring node.js openwhisk security Serverless streaming-analytics swift video VMware watson webinar
+More Security stories
+Security
+
+
+February 26, 2019
+Enabling Helm with TLS and Service Accounts
+Transport Layer Security (TLS) and service accounts—when used together— can greatly improve the security and flexibility of whatever application you choose to run on your cluster with IBM Cloud Data Shield.
+
+Continue reading
+Security
+
+
+February 11, 2019
+Announcing IBM Cloud Data Shield Beta at Think 2019
+Since we announced IBM Cloud Data Shield experimental, we have been hard at work helping our early adopters (Irene Energy and iExec) develop their Zero Trust platforms and building the next version of Data Shield. Today, we are excited to announce Data Shield beta!
+
+Continue reading
+Security
+
+
+February 11, 2019
+IBM Cloud Security Advisor Now Integrates with the Twistlock Security Platform
+Today, we are excited to further strengthen the relationship between IBM Cloud and Twistlock by announcing the integration of Security Advisor and the Twistlock security platform. We have integrated your IBM Cloud security tools into one dashboard and console to facilitate centralized security management.
+
+Continue reading
+Sign up  Learn more about IBM Cloud  IBM Cloud announcements
+
+Connect with us
